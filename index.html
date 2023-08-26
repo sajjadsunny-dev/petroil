@@ -6,12 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petroil</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .sunny a svg path {
+            transition: all .3s linear;
+        }
+
+        .sunny a:hover svg path {
+            fill: #F40404;
+        }
+    </style>
 
 </head>
 
 <body>
     <!-- =================navbar html================ -->
-    <nav class="fixed w-full z-50">
+    <nav class="navbar ease-linear duration-300 fixed w-full z-50">
         <header class="bg-[#282828] pt-4 pb-[17px] w-full">
             <div class="max-w-container mx-auto">
                 <div class="flex items-center">
@@ -37,8 +46,8 @@
                         </svg>
                         <p class="font-pops text-white text-xs font-normal ml-1">+896 120 5889 (Toll free)</p>
                     </a>
-                    <div class="flex ml-auto">
-                        <a href="#">
+                    <div class="sunny flex ml-auto">
+                        <a class="p-[5px] " href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
                                 fill="none">
                                 <path
@@ -46,7 +55,7 @@
                                     fill="white" />
                             </svg>
                         </a>
-                        <a class="ml-[19px]" href="#">
+                        <a class="p-[5px] ml-[19px]" href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
                                 fill="none">
                                 <path
@@ -54,7 +63,7 @@
                                     fill="white" />
                             </svg>
                         </a>
-                        <a class="ml-[19px]" href="#">
+                        <a class="p-[5px] ml-[19px]" href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
                                 fill="none">
                                 <path
@@ -62,7 +71,7 @@
                                     fill="white" />
                             </svg>
                         </a>
-                        <a class="ml-[19px]" href="#">
+                        <a class="p-[5px] ml-[19px]" href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
                                 fill="none">
                                 <path
@@ -75,10 +84,10 @@
             </div>
         </header>
 
-        <nav class="bg-primary py-[27px] w-full">
+        <nav class="navbar-nav ease-linear duration-300 bg-primary py-[27px] w-full">
             <div class="max-w-container mx-auto">
                 <div class="flex items-center">
-                    <img class="" src="images/logo.png" alt="logo">
+                    <a href="#"><img src="images/logo.png" alt="logo"></a>
                     <div class="ml-auto">
                         <ul class="flex">
                             <li><a class="hover:text-slate-950 duration-700 py-2 font-pops text-base font-semibold text-white mr-[47px]"

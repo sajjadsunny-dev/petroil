@@ -2,7 +2,7 @@ tailwind.config = {
     theme: {
         extend: {
             colors: {
-                primary: '#F40404',
+                'primary': '#F40404',
                 'overlay': '#00000099'
             },
             maxWidth: {
@@ -25,5 +25,17 @@ tailwind.config = {
                 'blog3': "url('./images/blog3.jpg')",
             }
         }
+    }
+}
+
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.querySelector(".navbar").style.transform = "translateY(-59px)";
+        document.querySelector(".navbar-nav").style.padding = "15px 0";
+    } else {
+        document.querySelector(".navbar").style.transform = "translateY(0)";
+        document.querySelector(".navbar-nav").style.padding = "27px 0";
     }
 }
